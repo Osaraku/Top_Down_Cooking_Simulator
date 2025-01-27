@@ -132,7 +132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6ce4b3accfb1044e945b08bde4980fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseCounter: {fileID: 0}
+  baseCounter: {fileID: 8813903878162761198}
   visualGameObjectArray:
   - {fileID: 5903181703080016862}
   - {fileID: 2913050349220087840}
@@ -337,3 +337,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e3c47b610543d347adf98bbd28d64d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  counterTopPoint: {fileID: 5618312021071722112}
+  fryingRecipeSOArray:
+  - {fileID: 11400000, guid: 18e70a4c36fc0c644817666d0de02a90, type: 2}
+--- !u!4 &5618312021071722112 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1736147757390250213, guid: ee5ec104bec57414d95cd5342d35f4a3,
+    type: 3}
+  m_PrefabInstance: {fileID: 6188025240910509669}
+  m_PrefabAsset: {fileID: 0}
