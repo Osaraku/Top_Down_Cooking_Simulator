@@ -32,6 +32,9 @@ public class OptionUI : MonoBehaviour
 
     [SerializeField] private Transform pressToRebindKeyTransform;
 
+    private Action onClosedButtonAction;
+
+
     private void Awake()
     {
         Instance = this;
@@ -49,6 +52,7 @@ public class OptionUI : MonoBehaviour
         closeButton.onClick.AddListener(() =>
         {
             Hide();
+            onClosedButtonAction();
         });
 
         moveUpButton.onClick.AddListener(() =>
@@ -108,9 +112,13 @@ public class OptionUI : MonoBehaviour
         pauseText.text = GameInput.Instance.GetBindingText(GameInput.Binding.Pause);
     }
 
-    public void Show()
+    public void Show(Action onClosedButtonAction)
     {
+        this.onClosedButtonAction = onClosedButtonAction;
+
         gameObject.SetActive(true);
+
+        sFXButton.Select();
     }
 
     public void Hide()
